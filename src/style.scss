@@ -1,0 +1,60 @@
+$maxwidth: 100%;
+$Merriweather: Merriweather sans-serif;
+$Varta: Varta sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+body{
+    background-color: #F3EEE8;
+}
+
+img{
+    max-width: $maxwidth;
+}
+
+.container{
+    max-width: $maxwidth;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// HEADER
+
+.header{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    &__navigator{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $maxwidth;
+        width: 470px;
+
+        &__link{
+            text-decoration: none;
+            font-family: $Varta;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #706458;
+
+            &__img{
+                width: 94px;
+            }
+        }
+    }
+
+    &__image{
+        width: 50px;
+    }
+}
+
+// HERDER END
