@@ -1,6 +1,9 @@
 $maxwidth: 100%;
-$Merriweather: Merriweather sans-serif;
-$Varta: Varta sans-serif;
+$Merriweather: 'Merriweather sans-serif';
+$Varta: 'Varta sans-serif';
+$Karla: 'Karla sans-serif';
+$greyDark: #534B42;
+$greylight: #706458;
 
 *{
     margin: 0;
@@ -58,3 +61,139 @@ img{
 }
 
 // HERDER END
+
+
+
+
+// FOOTER
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+        
+        li{
+            margin-bottom: 12px;
+            font-family: $Varta;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $greylight;
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            
+            h3{
+                margin-bottom: 22px;
+                font-family: $Merriweather;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 25px;
+                letter-spacing: 2px;
+                color: $greyDark;
+            }
+
+            ul{
+                margin-bottom: 22px;
+                list-style: none;
+            }
+
+            h4{
+                font-family: $Varta;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 30px;
+                letter-spacing: -0.2px;
+                color: $greyDark;
+            }
+
+            &__planet{
+                max-width: $maxwidth;
+                width: 235px;
+                
+                &__title{
+                    font-family: $Varta;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 30px;
+                    letter-spacing: -0.2px;
+                    color: $greyDark;
+                }
+
+                &__text{
+                    font-family: $Varta;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $greylight;
+                }
+
+                a{
+                    font-family: $Karla;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 25px;
+                    letter-spacing: 0.3px;
+                    color: #A06056;
+                }
+            }
+
+        }
+    }
+
+    &__setting{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+        height: 77px;
+
+        &__copy{
+            align-self: flex-end;
+            font-family: $Varta;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            color: saddlebrown;
+        }
+
+        &__socials{
+            display: flex;
+            justify-content: space-between;
+            max-width: $maxwidth;
+            width: 200px;
+
+            &__item{
+                width: 32px;
+                cursor: pointer;
+            }
+        }
+
+        &__policy{
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-end;
+            max-width: $maxwidth;
+            width: 390px;
+            list-style: none;
+
+            &__item{
+                margin-left: 32px;
+                font-family: $Varta;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 25px;
+                color: $greylight;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// FOOTER END
