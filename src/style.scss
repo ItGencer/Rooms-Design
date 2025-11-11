@@ -24,7 +24,6 @@ img{
     max-width: $maxwidth;
     width: 1140px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 // HEADER
@@ -62,8 +61,61 @@ img{
 
 // HERDER END
 
+// MAIN
 
+.into{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
 
+    &__block{
+        max-width: $maxwidth;
+        width: 420px;
+
+        &__lable{
+            font-family: $Varta;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            color: #A06056;
+            text-transform: uppercase;
+        }
+
+        &__title{
+            margin-bottom: 53px;
+            font-family: $Merriweather;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+            color: $greylight;
+        }
+
+        &__text{
+            margin-bottom: 32px;
+            font-family: $Varta;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: $greylight;
+        }
+
+        &__button{
+            width: 50px;
+        }
+    }
+
+    &__image{
+        width: 720px;
+        height: 900px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+// MAIN END
 
 // FOOTER
 
