@@ -50,12 +50,15 @@ img{
 
             &__img{
                 width: 94px;
+                position: relative;
             }
         }
     }
 
     &__image{
         width: 50px;
+        position: relative;
+        right: 30px;
     }
 }
 
@@ -106,11 +109,11 @@ img{
     }
 
     &__image{
-        width: 720px;
-        height: 900px;
+        width: 600px;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -247px;
+        object-fit: cover;
         z-index: -1;
     }
 }
