@@ -4,6 +4,7 @@ $Varta: 'Varta sans-serif';
 $Karla: 'Karla sans-serif';
 $greyDark: #534B42;
 $greylight: #706458;
+$terracotta: #A06056;
 
 *{
     margin: 0;
@@ -50,7 +51,6 @@ img{
 
             &__img{
                 width: 94px;
-                position: relative;
             }
         }
     }
@@ -70,6 +70,7 @@ img{
     display: flex;
     justify-content: space-between;
     margin-top: 130px;
+    position: relative;
 
     &__block{
         max-width: $maxwidth;
@@ -115,6 +116,74 @@ img{
         top: -247px;
         object-fit: cover;
         z-index: -1;
+    }
+}
+
+.room{
+    margin-top: 64px;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin: 48px 0;
+        list-style: none;
+        
+        &__item{
+            font-family: $Varta;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #706458e6;
+            position: relative;
+        
+            &:nth-child(odd){
+                width: 165px;
+            }
+
+            &:nth-child(even){
+                position: relative;
+            }
+
+            &__img{
+                width: 261px;
+            }
+
+            &__title{
+                position: absolute;
+                top: 135px;
+                right: -110px;
+                font-family: $Merriweather;
+                font-weight: 400;
+                font-size: 55px;
+                line-height: 60px;
+                letter-spacing: -0.6px;
+                color: $terracotta;
+            }
+        }
+    }
+
+    &__page{
+        display: flex;
+        justify-content: space-between;
+        width: 265px;
+
+        &__text:nth-child(1){
+            font-family: $Varta;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #706458e6;
+            opacity: 0.5;
+        }
+
+        &__text:nth-child(2){
+            font-family: $Karla;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.3px;
+            color: $terracotta;
+        }
     }
 }
 
@@ -196,7 +265,7 @@ img{
                     font-size: 17px;
                     line-height: 25px;
                     letter-spacing: 0.3px;
-                    color: #A06056;
+                    color: $terracotta;
                 }
             }
 
