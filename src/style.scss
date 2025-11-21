@@ -47,7 +47,7 @@ img{
             font-weight: 400;
             font-size: 18px;
             line-height: 25px;
-            color: #706458;
+            color: $greylight;
 
             &__img{
                 width: 94px;
@@ -183,6 +183,70 @@ img{
             line-height: 25px;
             letter-spacing: 0.3px;
             color: $terracotta;
+        }
+    }
+}
+
+.project{
+    margin: 134px 0 74px;
+    display: flex;
+    justify-content: space-between;
+
+    &__stay{
+        max-width: $maxwidth;
+        width: 458px;
+
+        &__title{
+            font-family: $Merriweather;
+            font-weight: 300;
+            font-size: 55px;
+            line-height: 60px;
+            letter-spacing: -0.6px;
+            color: $greylight
+        }
+
+        &__text{
+            margin-top: 35px;
+            font-family: $Karla;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: 0.3px;
+            color: $terracotta;
+            background: #F3EEE8;
+            border: none;
+        }
+    }
+
+    &__list{
+        max-width: $maxwidth;
+        width: 546px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        list-style: none;
+
+        &__item{
+            max-width: $maxwidth;
+            width: 258px;
+
+            &__title{
+                font-family: $Varta;
+                font-weight: 600;
+                font-size: 25px;
+                letter-spacing: -0.2px;
+                color: $terracotta;
+            }
+            
+            &__text{
+                margin-top: 22px;
+                font-family: $Varta;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #706458e6;
+            }
         }
     }
 }
